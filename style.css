@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+	box-sizing:border-box;
+}
+
+body {
+  display: flex;
+  font-family: Monaco, monospace;
+	height:100%;
+}
+
+div{
+	border-style: solid;
+	border-width: 1px;
+  border-radius: 15px;
+}
+
+#title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+/* 
+nested selection
+
+#apps h1{
+
+}
+
+from apps select all <h1>
+
+*/
+
+#apps {
+  width: 61.8%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#profile {
+  width: 38.2%;  
+	height:400px;
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	position:sticky;
+	top:300px; 
+	/* right:200px; */
+}
+
+#project_area {
+ 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+	background-color:#7dc7ca;
+	width:150px;
+	height:100px;
+  margin: 25px 25px 25px 25px;
+} 
+
+#profile_pic {
+  max-width: 70%;
+  height: auto;
+  border-radius: 50%; 
+  margin: 10px 10px;
+}
+
+#contact_info {
+  margin: 10px 10px 15px 15px;
+}
