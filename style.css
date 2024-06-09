@@ -59,10 +59,11 @@ from apps select all <h1>
 }
 
 .card {
-	background-color:#7dc7ca;
-	width:150px;
-	height:100px;
+
+	width:480px;
+	height:320px;
   margin: 25px 25px 25px 25px;
+  position: relative;
 } 
 
 #profile_pic {
@@ -75,3 +76,52 @@ from apps select all <h1>
 #contact_info {
   margin: 10px 10px 15px 15px;
 }
+
+/* . is use to select by classname */
+/* .card img selects all '<img>' element with 'card' class  */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; 
+  border-radius: 15px;
+  position: absolute; 
+  z-index: -1;
+}
+
+.card_title{
+  position: absolute; 
+  top: 0px;  
+  left: 0px;
+}
+
+.cardInfo{
+  position:absolute;
+  bottom:0px;
+  border-radius: 0px 0px 15px 15px;
+  width:100%;
+  height: 0%;
+  overflow:hidden;
+  transition-duration:1s;
+}
+
+.card:hover .cardInfo {
+  color: blue;
+  height:40%;
+  transition-duration:1s;
+  /* animation-name: slideup;
+  animation-duration: 1s;
+  animation-fill-mode:forwards; */
+} 
+
+/*
+.card:not(:hover) .cardInfo {
+  color: blue;
+  animation-name: slideup;
+  animation-duration: 1s;
+  animation-fill-mode:backwards;
+}
+
+@keyframes slideup {
+  from {height: 0%;}
+  to {height: 40%}
+} */
