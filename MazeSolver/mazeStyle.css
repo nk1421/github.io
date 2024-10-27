@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  border-sizing:border-box;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+}
+
+
+
+/* ---- app container ----  */
+
+#app{
+  display:flex;
+  flex-direction:column;
+  border-style:solid;
+  border-width:1px;
+}
+
+
+/* ---- canvas container ----  */
+
+#canvas {
+  display:flex;
+  flex-direction:row;
+  width: auto;
+  height: auto;
+}
+
+#myCanvas{
+  border-style:inset;
+  border-width:2px;
+}
+
+/* ---- color palette ----  */
+
+#colorPalette{
+  border-style:solid;
+  border-width:1px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.color {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+#red {
+  visibility: visible;
+  background-color: rgb(247, 92, 92); 
+}
+
+#white {
+  visibility: visible;
+  background-color: rgb(255, 255, 255); 
+}
+
+#gold {
+  /* visibility: hidden; */
+  background-color: rgb(245, 218, 86);  
+}
+
+#blue{
+  /* visibility: hidden; */ 
+  background-color: rgb(87, 158, 212); 
+}
+
+#sand{
+  background-color: rgb(235, 209, 150); 
+}
+
+#forest{
+  background-color: rgb(34, 130, 69) ; 
+}
+
+#snow{
+  background-color: rgb(224, 222, 218); 
+}
+
+
+/* ---- control Panel ----  */
+
+#controlPanel{
+  border-style:solid;
+  border-width:1px;
+
+}

@@ -23,6 +23,7 @@ body {
 #title {
   text-align: center;
   margin-top: 50px;
+  margin-left: 10px;
 }
 
 
@@ -38,21 +39,23 @@ from apps select all <h1>
 */
 
 #apps {
-  width: 61.8%;
+  max-width: 61.8%;
+  width: 35%;
   display: flex;
   flex-direction: column;
 
 }
 
 #profile {
-  width: 38.2%;  
+  max-width: 15%;  
+  width: 15%;
 	height:400px;
   display: flex;
   flex-direction: column;
 	align-items: center;
 	position:sticky;
-	top:300px; 
-	/* right:200px; */
+	top:150px; 
+	right:100px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
 }
 
@@ -72,7 +75,7 @@ from apps select all <h1>
 } 
 
 #profile_pic {
-  max-width: 70%;
+  max-width: 35%;
   height: auto;
   border-radius: 50%; 
   margin: 10px 10px;
@@ -96,7 +99,7 @@ from apps select all <h1>
 .card_title{
   position: absolute; 
   top: 0px;  
-  left: 0px;
+  left: 10px;
   margin-left: 1em; 
 }
 
@@ -116,7 +119,7 @@ from apps select all <h1>
 }
 
 .card:hover .cardInfo {
-  height:40%;
+  height:50%;
   transition-duration:1s;
   background-color: rgba(82, 126, 196, 0.4); 
   /* animation-name: slideup;

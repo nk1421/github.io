@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="mazeStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!--add loading animation/ skeleton for maze   -->
+  <!--add dropdow menu for algorithm selection   -->
+
+  <div id = "app">
+    <div id=controlPanel>
+      <button id=solve>Solve</button>
+      <button id=cancel disabled>Cancel Animation</button>
+      <button id=reset>Reset</button> 
+
+      <button id=update>Update</button>
+
+      <label for=cellsize>cell size:</label>
+      <input type="text" id="cellsize" name="cellsize" minlength="4" maxlength="8" size="10" />
+
+      <select name="algo" id ="algo"> 
+        <option value="DFS">Depth First Search</option>
+        <option value="BFS">Breath First Search</option>
+        <option value="DIJ">Dijisktra</option>
+        <option value="ASTAR">A* Search</option>
+      </select>
+
+    </div>
+
+    <div id = "canvas">
+      <canvas id=myCanvas> </canvas>
+      <div id="colorPalette">
+        <button class = color id = red></button>
+        <button class = color id = white></button>
+        <button class = color id = gold >Start</button>
+        <button class = color id = blue >End</button>
+        <button class = color id = sand>Sand</button>
+        <button class = color id = forest>Forest</button>
+        <button class = color id = snow>Snow</button>
+      </div>
+    </div>
+
+
+
+  </div>
+  <script src="Heap.js"></script>
+  <script src="init.js"></script>
+  <script src="mazeSearch.js"></script> 
+  <script src="mazeScript.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"> </script>
+  <script src="mazeSolver.js"></script>
+</body> 
+
+</html>
